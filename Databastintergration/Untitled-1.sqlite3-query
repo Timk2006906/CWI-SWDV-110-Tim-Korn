@@ -1,0 +1,11 @@
+-- database: ./products.db
+
+-- Use the ▷ button in the top right corner to run the entire file.
+
+
+SELECT
+    COUNT(*) AS total_products,
+    MIN(price) AS lowest_price,
+    MAX(price) AS highest_price,
+    AVG(price) AS average_price
+FROM products;
